@@ -1,0 +1,11 @@
+
+.cont-general .in .ajuste-ancho {
+
+    display: flex;
+}
+
+
+.ajuste-ancho .form-container{
+
+  width: 40%;
+}

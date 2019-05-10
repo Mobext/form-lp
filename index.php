@@ -3,13 +3,51 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Citroen</title>
+    <title>Citroen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
+    
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
-	<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
 
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+
+     'pageName': 'GAMA CITRÖEN UTILITARIOS',
+     'Language': 'es',
+     'siteTypeLevel1': 'cpp',
+     'siteTypeLevel2': '',
+     'vehicleModelBodystyle':'',
+     'vehicleModelBodystyleLabel':'',
+     'siteOwner':'',
+     'siteTarget':'',
+     'siteFamily':'',
+     'vehicleCO2':'',
+     'vehicleBrand':'',
+     'vehicleFuel':'',
+     'vehicleVersionId':'',
+     'vehicleFinition':'',
+     'vehicleFinitionLabel':'',
+     'vehicleMotor':'',
+     'vehicleMotorLabel':'',
+     'vehicleGearbox':'',
+     'vehicleGearboxLabel':'',
+     'vehicleConceptionBase':'',
+     'vehicleConceptionClient':'',
+     'vehicleMajDevIndex':'',
+     'vehicleMinDevIndex':'',
+     'vehicleExtCladding':'',
+     'vehicleBodyColor':'',
+     'vehicleBodyColorLabel':'',
+     'vehicleColorFilling':'',
+     'vehiclePriceCatalogue':'',
+     'vehiclePriceFinal':'',
+
+    });
+
+
+    </script>
 
 </head>
 
@@ -144,7 +182,7 @@
 
                 <div class="cont-formulario">
                     
-                    <form class="formulario" id="formulario" name="formulario">
+                    <form class="formulario" id="formulario" method="post" action="acc_registro.php" name="formulario" >  
                         
                         <div class="form-paso1">
                             <div class="custom-select">
@@ -203,6 +241,9 @@
                                 </ul>
                             </div>
 
+
+                            <input type="hidden" name="transformacion" value="">
+
                             <div class="clear0"></div>
 
                             
@@ -244,13 +285,7 @@
 
     
 </div> 
-    
 
-
-
-    
-
-    
     
     
 <!--SCRIPT-->    
@@ -281,31 +316,18 @@ $(document).ready( function() {
 
     $( ".trans-si" ).click(function() {
         valorTrans = "si";
+        document.formulario.transformacion.value="SI";
     });
     $( ".trans-no" ).click(function() {
         valorTrans = "no";
+        document.formulario.transformacion.value="NO";
     });
     
     
     
     
     
-    $( ".btn-continuar" ).click(function() {
-        //if ( valorTrans=="si" ){ 
-            $(".form-paso1").fadeOut(200);
-            $(".form-paso2").delay(300).fadeIn(500);
-            $(".barra-transformaciones").fadeIn(300);
 
-            $(".el-modelo .modelo").addClass("achica-auto");
-
-            $("#envia1").fadeIn(400);
-            $(".btn-continuar").hide(0);
-
-            //alert(valorTrans);
-
-            return 0; 
-        //}
-    });
     
     
     
@@ -315,17 +337,17 @@ $(document).ready( function() {
     
     
     
-	$('body').jpreLoader({
-		splashID: "#jSplash",
-		loaderVPos: '0%',
-		autoClose: true,
-		splashFunction: function() {  	
+    $('body').jpreLoader({
+        splashID: "#jSplash",
+        loaderVPos: '0%',
+        autoClose: true,
+        splashFunction: function() {    
             $('#jSplash').children('section').not('.selected').hide();
-			$('#jSplash').hide().fadeIn(300);
+            $('#jSplash').hide().fadeIn(300);
             $('.opTodo').fadeIn(500);                      
                                     
-		}
-	}, function() {	});
+        }
+    }, function() { });
     
     $('#box').keyup(function(){
        var valThis = $(this).val().toLowerCase();
@@ -479,7 +501,7 @@ $(document).ready( function() {
     
     
     
-    function valida(){ 	
+    function valida(){  
 
  
         document.formulario.modelo.style.borderColor = '#919191';
@@ -548,9 +570,9 @@ $(document).ready( function() {
         }
         
         
+
         
-        
- 
+            
         
         //valido el mensaje
         if ( valorTrans=="si" ){ 
@@ -559,27 +581,50 @@ $(document).ready( function() {
                  //document.formulario.mensaje.style.borderColor = '#ff5252';
                  return 0; 
             }
+
         }
-        
+
+  
+
 
         
         
-        alert("envia");
-        //document.getElementById('formulario').submit();
+        // alert("envia");
+        document.getElementById('formulario').submit();
 
     } 
     
+            $( ".btn-continuar" ).click(function() {
+            //if ( valorTrans=="si" ){ 
+                $(".form-paso1").fadeOut(200);
+                $(".form-paso2").delay(300).fadeIn(500);
+                $(".barra-transformaciones").fadeIn(300);
+
+                $(".el-modelo .modelo").addClass("achica-auto");
+
+                $("#envia1").fadeIn(400);
+                $(".btn-continuar").hide(0);
+
+                //alert(valorTrans);
+
+                return 0; 
+            //}
+        });
     
 </script>
 
 <script language="JavaScript">
 function valEmail(valor){   
     re=/^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,3})$/
-    if(!re.exec(valor))    {
-        return false;
-    }else{
-        return true;
-    }
+    valid = re.test(String(valor).toLowerCase());
+    // console.log(valid); 
+    return valid;
+
+    // if(!re.exec(valor))    {
+    //     return false;
+    // }else{
+    //     return true;
+    // }
 }
 </script>
 <!--VALIDACION-->

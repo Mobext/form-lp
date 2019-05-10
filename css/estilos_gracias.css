@@ -1,0 +1,21 @@
+/* Estilos Gracias */
+
+.cont-general .in .cont-modelo .modelo {
+    height: 370px;
+}
+
+.cont-general .in .cont-formulario {
+
+    display: inline-block;
+    height: 100px;
+    z-index: 10;
+    vertical-align: middle;
+    position: relative;
+}
+
+.cont-general .in {
+
+    height: 420px;
+
+}
+
