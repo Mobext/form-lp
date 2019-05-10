@@ -1,0 +1,658 @@
+@charset "utf-8";a{text-decoration:none}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline;font-family:Roboto,sans-serif}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+
+body { overflow-x: hidden  }
+.clear0{ clear:both; height:0px}
+.clear15 { clear:both; height:15px}
+.clear30 { clear:both; height:30px}
+.clear40 { clear:both; height:40px}
+*:focus { outline:none}
+p, a, ul , li, b, a, u, i, strong, input, textarea, label, span { font-family: 'citroenregular';}
+b { font-weight:bold}
+
+@font-face {
+    font-family: 'citroenbold';
+    src: url('font/citroen_bold_0-webfont.woff2') format('woff2'),
+         url('font/citroen_bold_0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'citroenlight';
+    src: url('font/citroen_light_0-webfont.woff2') format('woff2'),
+         url('font/citroen_light_0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'citroenregular';
+    src: url('font/citroen_regular_0-webfont.woff2') format('woff2'),
+         url('font/citroen_regular_0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.logo { position: absolute; right: 5%; top: 30px; width: 80px; z-index: 100}
+.logo-mob { position: relative;  float: right; margin-top: 15px; margin-bottom: 20px; width: 80px; display: none}
+
+footer { width: 100%; height: 90px; position: absolute; bottom: 0; z-index: 9999;}
+footer .cnrt {position: absolute; right: 5%; width: 150px; top: 50%; transform: translateY(-50%);}
+footer .btn-terminos { position: absolute; left: 5%;  font-family: 'citroenregular'; font-size: 14px; cursor: pointer; top: 50%; transform: translateY(-50%);}
+footer .btn-terminos:hover { text-decoration: underline}
+
+
+
+.footer-mob { width: 100%; height: auto; position: relative; display: none; background-color: #FFF; padding: 40px 0px;}
+.footer-mob .cnrt {position: absolute; right: 5%; width: 110px; top: 50%; transform: translateY(-50%);}
+.footer-mob .btn-terminos { position: absolute; left: 5%;  font-family: 'citroenregular'; font-size: 14px; cursor: pointer; top: 50%; transform: translateY(-50%);}
+.footer-mob .btn-terminos:hover { text-decoration: underline}
+
+
+
+
+.cont-general { position: absolute; left: 0; right: 0;  bottom: 0%; top: 0%; overflow: hidden;
+    
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ae3232+0,570d0d+100 */
+background: #ae3232; /* Old browsers */
+background: -moz-linear-gradient(top, #ae3232 0%, #570d0d 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ae3232 0%,#570d0d 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ae3232 0%,#570d0d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ae3232', endColorstr='#570d0d',GradientType=0 ); /* IE6-9 */
+    
+}
+
+
+.cont-general .in { width: 100%; height: 520px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 999}
+
+.cont-general .in .ajuste-ancho { width: 90%; margin: auto; position: absolute; height: auto; left: 50%; top: 55%; transform: translate(-50%,-50%); z-index: 10; text-align: center}
+
+.cont-general .in .cont-modelo { width: 710px; display: inline-block;  z-index: 10; vertical-align: middle; text-align: left;}
+.cont-general .in .cont-modelo h1 { color: #FFF; font-family: 'citroenbold'; font-size: 70px; line-height: 50px; margin-bottom: 20px}
+.cont-general .in .cont-modelo h1 span { font-size: 35px;  ;font-family: 'citroenlight'}
+.cont-general .in .cont-modelo p { color: #FFF; font-size: 23px;  font-family: 'citroenlight';}
+.cont-general .in .cont-modelo .el-modelo { width: 610px; height: 370px; position: relative; margin-top: 20px;
+-moz-transition:all 0.25s ease 0s;
+    -o-transition:all 0.25s ease 0s;
+    -ms-transition:all 0.25s ease 0s;
+    -webkit-transition:all 0.25s ease 0s;}
+.cont-general .in .cont-modelo .el-modelo .modelo { position: absolute; top: 0; left: 0; height: 100%;
+-moz-transition:all 0.25s ease 0s;
+    -o-transition:all 0.25s ease 0s;
+    -ms-transition:all 0.25s ease 0s;
+    -webkit-transition:all 0.25s ease 0s;}
+.cont-general .in .cont-modelo .el-modelo .berlingo { display: block}
+.cont-general .in .cont-modelo .el-modelo .jumper { display: none}
+.cont-general .in .cont-modelo .el-modelo .jumpy { display: none}
+
+
+
+
+.cont-general .in .cont-formulario { width: 440px; display: inline-block;  height: 500px;  z-index: 10; vertical-align: middle; position: relative}
+.cont-general .in .cont-formulario .titular {color: #FFF; font-size: 20px;  font-family: 'citroenregular'; margin-bottom: 15px; text-align: center}
+
+.cont-general .in .cont-formulario form { width: 400px; margin: auto}
+
+
+
+
+
+
+.cont-general .in .cont-formulario select { background: transparent; border: none; border-bottom: 1px solid #757575; color: #FFF; width: 100%; height: 30px; font-family: 'citroenregular'; color: #999; font-style: 16px;}
+
+
+
+
+/* The container must be positioned relative: */
+.custom-select {  position: relative;  width: 370px; margin: auto; margin-bottom: 18px;}
+
+.custom-select select {  display: none; /*hide original SELECT element: */}
+
+.select-selected {  background-color: transparent;}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #CCC;
+  padding: 8px 6px;
+    border: none;
+  border-bottom: 1px solid #919191;
+  cursor: pointer;
+    text-align: left;
+    font-family: 'citroenregular'; font-size: 19px;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #b13434;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99; 
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.btn-send { background-color: #b13434; color: #FFF; font-size: 18px; width: 180px; padding-top: 15px; padding-bottom: 17px;  border: none; font-family: 'citroenregular'; margin-top: 20px; position: absolute; bottom: 0px; left: 50%; transform: translateX(-50%);
+-moz-transition:all 0.25s ease 0s;
+    -o-transition:all 0.25s ease 0s;
+    -ms-transition:all 0.25s ease 0s;
+    -webkit-transition:all 0.25s ease 0s;}
+.btn-send:hover { background-color: #912222;}
+
+
+
+
+.btn-continuar { background-color: #b13434; color: #FFF; font-size: 18px; width: 180px; padding-top: 18px; padding-bottom: 19px;  border: none; font-family: 'citroenregular'; margin-top: 20px; position: absolute; bottom: 0px; left: 50%; transform: translateX(-50%); display: none; cursor: pointer;
+-moz-transition:all 0.25s ease 0s;
+    -o-transition:all 0.25s ease 0s;
+    -ms-transition:all 0.25s ease 0s;
+    -webkit-transition:all 0.25s ease 0s;}
+.btn-continuar:hover { background-color: #912222;}
+
+
+
+
+
+.cont-general .franja-blanca { width: 100%; height: 330px; background-color: #FFF; position: absolute; bottom: -320px; z-index: 1}
+
+
+
+
+
+.opcion-transformacion {    width: 96%;    height: auto;    margin: auto;    margin-top: 15px;}
+.opcion-transformacion p.txt1 { display: inline-block; float: left; vertical-align: middle; color: #FFF; padding-top: 13px}
+.opcion-transformacion .sino { display: inline-block; float: right; vertical-align: middle}
+.opcion-transformacion .sino li { display: inline-block; border: 1px solid #FFF; text-align: center; width: 20px;   padding: 11px 10px;  margin-left: 4px; cursor: pointer;
+-webkit-border-radius: 100%;
+-moz-border-radius: 100%;
+border-radius: 100%;
+-moz-transition:all 0.25s ease 0s;
+    -o-transition:all 0.25s ease 0s;
+    -ms-transition:all 0.25s ease 0s;
+    -webkit-transition:all 0.25s ease 0s;}
+.opcion-transformacion .sino li p { color: #FFF;}
+.opcion-transformacion .sino li:hover { background-color: #B13434; border: 1px solid #B13434;}
+.opcion-transformacion .sino li.active { background-color: #B13434; border: 1px solid #B13434;}
+
+
+
+
+
+
+
+
+
+/* LEGALES */
+.cont-legales { width: 100%; height: 100%; position: absolute; top: 100%; left: 0; z-index: 999999; overflow: hidden; background-color: #FFF; opacity: 0}
+.cont-legales .izq { width: 300px; height: 100%; position: absolute; top: 0; left: 0px; background-color: #3D3D42}
+.cont-legales .izq .logo { position: absolute; width: 110px; left: 50%; transform: translateX(-50%); top: 60px;}
+.cont-legales .der { height: 100%; position: absolute; background-color: #FFF; top: 0; right: 0; left: 300px;}
+.cont-legales .der .cont-texto { width: 92%; height: 100%; position: absolute; top: 0; right: 0;}
+.cont-legales .der .cont-texto .titulo { font-size: 24px; font-family: 'citroenregular'; margin-top: 60px; margin-bottom: 30px}
+.cont-legales .der .cont-texto .legales { font-size: 16px; line-height: 24px; padding-right: 60px; padding-bottom: 50px;}
+.cont-legales .der .close { width: 40px; position: absolute; top: 0; right: 5px; opacity: 0.6; cursor: pointer; z-index: 300;
+-moz-transition:all 0.25s ease 0s;
+    -o-transition:all 0.25s ease 0s;
+    -ms-transition:all 0.25s ease 0s;
+    -webkit-transition:all 0.25s ease 0s;}
+.cont-legales .der .close:hover { opacity: 1}
+
+
+
+
+
+
+
+
+/* LOCALIDADES1 */
+.cont-localidades1 { width: 100%; height: 100%; position: absolute; top: 100%; left: 0; z-index: 999999; overflow: hidden; background-color: #FFF; opacity: 0}
+.cont-localidades1 .izq { width: 300px; height: 100%; position: absolute; top: 0; left: 0px; background-color: #3D3D42}
+.cont-localidades1 .izq .logo { position: absolute; width: 110px; left: 50%; transform: translateX(-50%); top: 60px;}
+.cont-localidades1 .der { height: 100%; position: absolute; background-color: #FFF; top: 0; right: 0; left: 300px;}
+.cont-localidades1 .der .cont-texto { width: 92%; height: 100%; position: absolute; top: 0; right: 0;}
+.cont-localidades1 .der .cont-texto .titulo { font-size: 24px; font-family: 'citroenregular'; margin-top: 60px; margin-bottom: 30px}
+.cont-localidades1 .der .cont-texto .legales { font-size: 16px; line-height: 24px; padding-right: 60px; padding-bottom: 50px;}
+.cont-localidades1 .der .close { width: 40px; position: absolute; top: 0; right: 5px; opacity: 0.6; cursor: pointer; z-index: 300;
+-moz-transition:all 0.25s ease 0s;
+    -o-transition:all 0.25s ease 0s;
+    -ms-transition:all 0.25s ease 0s;
+    -webkit-transition:all 0.25s ease 0s;}
+.cont-localidades1 .der .close:hover { opacity: 1}
+
+.cont-localidades1 #box { border: none; background-color: #f9f9f9; width: 70%; height: auto; color: #333; padding: 10px; margin-bottom: 16px; float: left}
+.lista-consecionarios { width: 70%; height: auto; margin-bottom: 50px}
+.lista-consecionarios li { width: 100%; height: auto; padding: 14px 0px; border-bottom: 1px solid #EEE; cursor: pointer; 
+-moz-transition:all 0.25s ease 0s;
+    -o-transition:all 0.25s ease 0s;
+    -ms-transition:all 0.25s ease 0s;
+    -webkit-transition:all 0.25s ease 0s;}
+.lista-consecionarios li p.valor { font-family: 'citroenlight'; font-size: 22px; padding-left: 10px; margin-bottom: 6px}
+.lista-consecionarios li p.data { font-family: 'citroenregular'; font-size: 12px; padding-left: 10px; color: #999; text-transform: uppercase; }
+.lista-consecionarios li p.data span { color: firebrick;font-family: 'citroenbold';}
+.lista-consecionarios li:hover { background-color: #EEE}
+
+
+
+
+/* LOCALIDADES2 */
+.cont-localidades2 { width: 100%; height: 100%; position: absolute; top: 100%; left: 0; z-index: 999999; overflow: hidden; background-color: #FFF; opacity: 0}
+.cont-localidades2 .izq { width: 300px; height: 100%; position: absolute; top: 0; left: 0px; background-color: #3D3D42}
+.cont-localidades2 .izq .logo { position: absolute; width: 110px; left: 50%; transform: translateX(-50%); top: 60px;}
+.cont-localidades2 .der { height: 100%; position: absolute; background-color: #FFF; top: 0; right: 0; left: 300px;}
+.cont-localidades2 .der .cont-texto { width: 92%; height: 100%; position: absolute; top: 0; right: 0;}
+.cont-localidades2 .der .cont-texto .titulo { font-size: 24px; font-family: 'citroenregular'; margin-top: 60px; margin-bottom: 30px}
+.cont-localidades2 .der .cont-texto .legales { font-size: 16px; line-height: 24px; padding-right: 60px; padding-bottom: 50px;}
+.cont-localidades2 .der .close { width: 40px; position: absolute; top: 0; right: 5px; opacity: 0.6; cursor: pointer; z-index: 300;
+-moz-transition:all 0.25s ease 0s;
+    -o-transition:all 0.25s ease 0s;
+    -ms-transition:all 0.25s ease 0s;
+    -webkit-transition:all 0.25s ease 0s;}
+.cont-localidades2 .der .close:hover { opacity: 1}
+
+.cont-localidades2 #box2 { border: none; background-color: #f9f9f9; width: 70%; height: auto; color: #333; padding: 10px; margin-bottom: 16px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INPUTS */
+.group {   position:relative; margin: auto;  margin-top: 24px; width: 370px }
+input {  font-size:20px;  display:block;  width:98%;  border:none;  border-bottom:1px solid #919191;    background: transparent; padding-bottom: 7px; color: #CCC; font-family: 'citroenlight'; margin: auto; padding-left: 5px;}
+input:focus { outline:none; }
+
+/* LABEL ======================================= */
+label {  color:#CCC;   font-size:18px;  font-weight:normal;  position:absolute;  pointer-events:none;  left:5px;  top:10px;  transition:0.2s ease all;   -moz-transition:0.2s ease all;   -webkit-transition:0.2s ease all;}
+/* active state */
+input:focus ~ label, input:valid ~ label {  top:-13px;  font-size:12px;  color:#CCC; left: 5px; padding-bottom: 0px}
+
+/* BOTTOM BARS ================================= */
+.bar { position:relative; display:block; width:100%; margin: auto }
+.bar:before, .bar:after {  content:'';  height:1px;   width:0;  bottom:1px;   position:absolute;  background:#FFF;   transition:0.2s ease all;   -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;}
+.bar:before {  left:50%;}
+.bar:after {  right:50%; }
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {  width:50%;}
+
+/* HIGHLIGHTER ================================== */
+.highlight {  position:absolute;  height:60%;   width:100px;   top:25%;   left:0;  pointer-events:none;  opacity:0.5;}
+/* active state */
+input:focus ~ .highlight {  -webkit-animation:inputHighlighter 0.3s ease;  -moz-animation:inputHighlighter 0.3s ease;  animation:inputHighlighter 0.3s ease;}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {	
+    from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+
+
+
+
+
+
+
+.form-paso1 {  height: 420px; position: absolute; top: 0; left: 0;}
+
+
+
+.form-paso2 { display: none;  height: 420px;  position: absolute; top: 0; left: 0;}
+.form-paso2 p {    color: #FFF;    font-size: 22px;    line-height: 23px;    text-align: left;    margin-bottom: 15px;}
+.form-paso2 .textarea-field { color: #FFF; font-weight: 300; font-size: 18px; line-height: 26px; width: 94%; height: 340px; border: 1px solid #919191; background-color: transparent; resize: none; padding: 10px}
+
+
+
+.form-paso2 .flecha-atras {       position: absolute;    width: 20px;    height: 14px;    background-image: url(../img/back.png);    left: 2px;    bottom: -27px;    background-size: 100% auto;    background-repeat: no-repeat;    background-position: center center; opacity: 0.6; cursor: pointer}
+.form-paso2 .flecha-atras:hover { opacity: 1}
+
+
+
+
+
+.berlingo-trans { display: none}
+.jumper-trans { display: none}
+.jumpy-trans { display: none}
+
+
+.barra-transformaciones { position: absolute; width: 80px; height: auto;  top: 0; left: 0px; z-index: 999}
+.barra-transformaciones li { width: 80px; height: 80px; background-color: #FFF; margin-bottom: 12px; border: 3px solid #d8d8d8; box-sizing: border-box; position: relative; cursor: pointer;
+    -webkit-border-radius: 100%;
+-moz-border-radius: 100%;
+border-radius: 100%;
+-moz-transition:all 0.25s ease 0s;
+    -o-transition:all 0.25s ease 0s;
+    -ms-transition:all 0.25s ease 0s;
+    -webkit-transition:all 0.25s ease 0s;}
+.barra-transformaciones li .foto { width: 80px; height: 80px; -webkit-border-radius: 100%;-moz-border-radius: 100%;border-radius: 100%; overflow: hidden; position: relative;}
+.barra-transformaciones li:hover { border: 3px solid #a87373}
+
+.barra-transformaciones li .nombre { width: 50px; height: 50px; background-color: #FFF; position: absolute; top: 50%; transform: translateY(-50%); left: 12px; z-index: 0; text-align: right; overflow: hidden;
+    -webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+border-radius: 25px;
+-moz-transition:all 0.25s ease 0s;
+    -o-transition:all 0.25s ease 0s;
+    -ms-transition:all 0.25s ease 0s;
+    -webkit-transition:all 0.25s ease 0s;}
+.barra-transformaciones li .nombre p { color: #333 !important; padding: 16px; padding-left: 70px; padding-right: 22px; font-size: 18px  !important; font-family: 'citroenregular'  !important; letter-spacing: 1px  !important; white-space: pre}
+
+.barra-transformaciones li:hover .policia { width: 190px}
+.barra-transformaciones li:hover .ambulancia1 { width: 270px}
+.barra-transformaciones li:hover .ambulancia2 { width: 294px}
+.barra-transformaciones li:hover .furgon { width: 160px}
+.barra-transformaciones li:hover .mixto { width: 220px}
+.barra-transformaciones li:hover .hidro { width: 230px}
+
+
+
+
+
+
+
+.achica-auto { height: auto !important; width: 80%  !important; left: inherit  !important; right: 0px;}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1300px){
+    .cont-general .in .cont-modelo {    width: 620px; }
+    .cont-general .in .cont-formulario {    width: 360px;}
+}
+
+
+@media screen and (max-width:1100px){
+
+    .cont-general .in .cont-formulario {    width: 300px;}
+    .cont-general .in .cont-modelo {    width: 540px; }
+    .cont-general .in .cont-modelo p {    font-size: 21px;}
+    .cont-general .in .cont-modelo .modelo {    height: auto;    width: 100%;}
+    
+    .cont-general .in .cont-formulario form {    width: 100%;}
+   
+    .campo-localidad {    width: 100%;}
+    .campo-localidad .ancla-localidad {    width: 250px;}
+    
+    .cont-general .franja-blanca {    bottom: -330px;}
+    
+    .cont-general .in .cont-modelo .el-modelo {    width: 530px;    height: 332px;}
+    
+    .custom-select {    width: 300px; margin-bottom: 12px;}
+    .group {    width: 100%;}
+    .bar {    width: 100%;}
+    .opcion-transformacion p.txt1 {    padding-top: 3px;    width: 180px;    text-align: left}
+    .btn-send {    width: 180px;    padding-top: 6px;    padding-bottom: 8px;    margin-top: 20px;}
+    .btn-continuar { width: 180px;    padding-top: 9px;    padding-bottom: 11px;    margin-top: 20px;}
+    .cont-general .in .cont-formulario .titular {    font-size: 18px;}
+    
+    .logo {    right: 2%;    top: 20px;}
+    
+    .barra-transformaciones li {    width: 60px;        height: 60px;}
+    .barra-transformaciones li .foto {    width: 60px;    height: 60px;}
+    .barra-transformaciones li .foto img { width: 100%;}
+    .barra-transformaciones li .nombre {    left: 0px; width: 40px; height: 40px;}
+    .barra-transformaciones li .nombre p {    font-size: 15px !important;    letter-spacing: 0px !important; padding-top: 13px;}
+    
+    .barra-transformaciones li:hover .policia { width: 160px}
+    .barra-transformaciones li:hover .ambulancia1 { width: 220px}
+    .barra-transformaciones li:hover .ambulancia2 { width: 234px}
+    .barra-transformaciones li:hover .furgon { width: 142px}
+    .barra-transformaciones li:hover .mixto { width: 180px}
+    .barra-transformaciones li:hover .hidro { width: 190px}
+    
+    
+}
+
+
+@media screen and (max-width:1000px){
+
+    .cont-general .in .cont-modelo {    width: 470px;}
+
+    
+    .cont-general .in .cont-formulario .titular {    font-size: 20px;    width: 80%;    margin: auto;}
+    
+    .cont-general .in .cont-modelo h1 span {    font-size: 36px;}
+    .cont-general .in .cont-modelo h1 {    font-size: 70px;    line-height: 50px;}
+    .btn-send {    margin-top: 16px;}
+    .cont-general .franja-blanca {    bottom: -320px;}
+    
+    .cont-localidades1 .izq {    width: 130px;}
+    .cont-localidades1 .izq .logo {    width: 70px;    top: 45px;}
+    .cont-localidades1 .der {    left: 130px;}
+    
+    .cont-localidades2 .izq {    width: 130px;}
+    .cont-localidades2 .izq .logo {    width: 70px;    top: 45px;}
+    .cont-localidades2 .der {    left: 130px;}
+    
+    .cont-legales .izq {    width: 130px;}
+    .cont-legales .izq .logo {    width: 70px;    top: 45px;}
+    .cont-legales .der {    left: 130px;}
+    
+    .cont-general .in .cont-modelo .el-modelo {    width: 460px;    height: 288px;}
+    .cont-general .in .cont-modelo p {    font-size: 24px;    margin-bottom: 30px;}
+    
+    
+}
+
+
+@media screen and (max-width:880px){
+
+    .cont-general .in .cont-modelo {    width: 340px;}
+    .cont-general .in .cont-modelo h1 span {    font-size: 25px;}
+    .cont-general .in .cont-modelo h1 {    font-size: 42px;    line-height: 32px;}
+    
+    .cont-general .in .cont-modelo .el-modelo {    width: 330px;    height: 207px;}
+    
+    .cont-general .in .cont-modelo p {    font-size: 23px;    width: 300px; margin-bottom: 40px}
+    
+    .cont-general .in .cont-modelo h1 {    font-size: 56px;    line-height: 42px;}
+    .cont-general .in .cont-modelo h1 span {    font-size: 30px;}
+     
+    footer .cnrt {    width: 110px;}
+
+}
+
+
+@media screen and (max-width:720px){
+
+    .cont-general .in {    width: 100%;    height: 100%;    position: absolute;    top: 0%;    left: 0%;    transform: translate(0%,0%); }
+    .cont-general .in .ajuste-ancho { width: 100%;    height: 100%;    position: absolute;    top: 0%;    left: 0%;    transform: translate(0%,0%);    overflow: scroll;}
+    
+    .cont-general .in .cont-modelo {    display: block;    width: 82%; margin: auto; vertical-align: inherit; text-align: center; margin-top: 20px}
+    .cont-general .in .cont-formulario {    width: 100%; height: 530px;    display: block; vertical-align: inherit; margin-top: 30px; margin-bottom: 50px}
+    
+    .cont-general .in .cont-modelo p {    font-size: 24px;    width: 100%;    margin: auto;}
+    .cont-general .in .cont-modelo h1 span {    font-size: 32px;}
+    .cont-general .in .cont-modelo h1 {    font-size: 70px;    line-height: 48px;}
+    
+    footer { display: none}
+    .cont-general .franja-blanca {display: none}
+    .footer-mob { display: block}
+    
+    .cont-general .in .cont-formulario form {    width: 340px}
+    input {    width: 340px;}
+    .campo-localidad {    width: 340px;}
+    .campo-localidad .ancla-localidad {    width: 310px;}
+    .bar {    width: 340px;}
+    
+    .logo {   right: 4%;    top: 25px;    width: 70px;}
+    
+    .lista-consecionarios {    width: 90%;}
+    .cont-localidades1 #box {    width: 90%;}
+    .cont-localidades2 #box2 {    width: 90%;}
+    
+    .logo {  display: none}
+    .logo-mob {  display: block;   margin-top: 20px;     margin-right: 20px; width: 70px}
+    
+    .cont-general .in .cont-modelo .el-modelo {    width: 442px;    height: 277px; margin: auto; margin-top: 40px;}
+    
+    .btn-send {    margin-top: 30px; padding-top: 10px;    padding-bottom: 12px;}
+    
+    .btn-continuar { margin-top: 30px; padding-top: 13px;    padding-bottom: 15px;}
+    
+    .custom-select {    width: 100%; margin-bottom: 22px}
+    
+    .barra-transformaciones li .nombre p { text-align: left; }
+    
+    .form-paso1 {    left: 50%; transform: translateX(-50%); }
+    .form-paso2 {    left: 50%; transform: translateX(-50%); width: 240px; }
+    
+}
+
+
+@media screen and (max-width:550px){
+    
+    .cont-general .in .cont-modelo h1 span {    font-size: 26px;}
+    .cont-general .in .cont-modelo h1 {    font-size: 44px;    line-height: 35px;}
+    .cont-general .in .cont-modelo p {    font-size: 18px;    line-height: 23px;    width: 100%;}
+    .cont-general .in .cont-formulario .titular {    font-size: 22px;}
+    
+    .logo-mob {    width: 60px;  }
+    
+    .cont-general .in .cont-formulario form {    width: 280px}
+    input {    width: 280px;}
+    .campo-localidad {    width: 280px;}
+    .campo-localidad .ancla-localidad {    width: 250px;}
+    .bar {    width: 280px;}
+    
+    .cont-localidades1 .izq { display: none}
+    .cont-localidades1 .der { left: 0}
+    .cont-localidades2 .izq { display: none}
+    .cont-localidades2 .der { left: 0}
+    .cont-legales .izq { display: none}
+    .cont-legales .der { left: 0}
+    
+    .cont-general .in .cont-modelo .el-modelo {    width: 360px;    height: 225px;}
+    .cont-general .in .cont-modelo h1 {    font-size: 52px;    line-height: 42px;}
+    .cont-general .in .cont-modelo h1 span {    font-size: 32px;}
+    
+    .cont-general .in .cont-modelo p {    font-size: 20px;    line-height: 23px;}
+    .opcion-transformacion p.txt1 {    padding-top: 3px;    width: 165px;}
+    
+    .barra-transformaciones li .nombre p { line-height: inherit !important}
+    
+    .form-paso2 .textarea-field {    height: 320px;}
+    
+}
+
+
+@media screen and (max-width:420px){
+
+    .cont-general .in .cont-formulario form {    width: 240px}
+    input {    width: 240px;}
+    .campo-localidad {    width: 240px;}
+    .campo-localidad .ancla-localidad {    width: 210px;}
+    .bar {    width: 240px;}
+    
+    .footer-mob .cnrt {    width: 70px;}
+    
+    .cont-general .in .cont-modelo {    width: 86%;}
+    .cont-general .in .cont-modelo h1 {    font-size: 38px;    line-height: 32px;}
+    .cont-general .in .cont-modelo h1 span {    font-size: 24px;}
+    .cont-general .in .cont-modelo p {    font-size: 18px;    line-height: 21px;    width: 90%;}
+    
+    .cont-general .in .cont-formulario .titular {    font-size: 20px;    line-height: 23px;}
+    
+    .cont-general .in .cont-modelo { margin-top: 0px; }
+    
+    .cont-general .in .cont-modelo .el-modelo {    width: 270px;    height: 169px;}
+    .cont-general .in .cont-modelo h1 {    font-size: 42px;    line-height: 38px;  }
+    .cont-general .in .cont-modelo h1 span {    font-size: 27px;}
+    .cont-general .in .cont-modelo p {    font-size: 20px;    line-height: 21px;    width: 100%;    margin-bottom: 20px;}
+    .cont-general .in .cont-formulario .titular {    width: 100%;}
+    .opcion-transformacion p.txt1 {    padding-top: 0px;    width: 125px;}
+    .opcion-transformacion .sino {    margin-top: 7px;}
+    
+    .barra-transformaciones li {    width: 45px; height: 45px}
+    .barra-transformaciones li .foto {    width: 45px;    height: 45px;}
+    
+    .barra-transformaciones li .nombre p {    padding-left: 55px; }
+    
+    .btn-send {    bottom: -20px;}
+    .btn-continuar {  bottom: -20px;}
+    
+}
+
+
+
+@media screen and (max-width:300px){
+    
+    .cont-general .in .cont-formulario form {    width: 210px}
+    input {    width: 210px;}
+    .campo-localidad {    width: 210px;}
+    .campo-localidad .ancla-localidad {    width: 180px;}
+    .bar {    width: 210px;}
+    
+    .cont-general .in .cont-modelo h1 span {    font-size: 25px;}
+    .cont-general .in .cont-modelo h1 {    font-size: 34px;    line-height: 28px;}
+    
+    .footer-mob .cnrt {    width: 50px;}
+    .footer-mob .btn-terminos {    left: 5%;}
+    
+    .cont-general .in .cont-modelo .el-modelo {    width: 210px;    height: 131px;}
+    
+    .opcion-transformacion p.txt1 {    width: 100px;}
+}
+
+
+
+
+
